@@ -22,24 +22,12 @@ public class SwaggerConfig extends Application {
     }
 
     void createSwaggerJsonFile() {
-        FileWriter fileWriter = null;
-
-        try {
-            fileWriter = new FileWriter("swagger.json");
+        try (FileWriter fileWriter = new FileWriter("swagger.json")) {
             fileWriter.write(Json.pretty(beanConfig.getSwagger()));
             fileWriter.flush();
             System.out.println("File swagger.json successfully created");
         } catch (IOException ioe) {
             ioe.printStackTrace();
-        } finally {
-            if (fileWriter != null) {
-                try {
-                    fileWriter.close();
-                } catch (IOException e) {
-                    System.err.println("Could not close file");
-                    System.exit(0);
-                }
-            }
         }
     }
 }
