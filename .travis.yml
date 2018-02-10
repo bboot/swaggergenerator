@@ -1,4 +1,8 @@
+sudo: false
 language: java
-
+script: ./mvnw clean verify
 jdk:
-- oraclejdk8
+  - oraclejdk8
+branches:
+  only:
+  - master
