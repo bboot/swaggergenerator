@@ -1,4 +1,4 @@
-![Build Status] (https://travis-ci.org/bohdan-leonchyk/swaggergenerator.svg?branch=master)
+![Build Status](https://travis-ci.org/bohdan-leonchyk/swaggergenerator.svg?branch=master)
 
 # Swagger-api JSON file generator
 
