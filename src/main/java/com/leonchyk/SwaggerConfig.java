@@ -1,4 +1,4 @@
-package com.leonchyk.swaggergenerator;
+package com.leonchyk;
 
 import io.swagger.jaxrs.config.BeanConfig;
 import io.swagger.util.Json;
@@ -7,12 +7,15 @@ import javax.ws.rs.core.Application;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * @author Bohdan Leonchyk
+ */
 public class SwaggerConfig extends Application {
     private static BeanConfig beanConfig = new BeanConfig();
 
     public SwaggerConfig() {
         beanConfig.setTitle("myTitle");
-        beanConfig.setResourcePackage("com.leonchyk.swaggergenerator");
+        beanConfig.setResourcePackage("com.leonchyk");
         beanConfig.setScan(true);
         beanConfig.scanAndRead();
     }

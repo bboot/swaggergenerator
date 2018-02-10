@@ -1,4 +1,4 @@
-package com.leonchyk.swaggergenerator;
+package com.leonchyk;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiParam;
@@ -9,6 +9,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
 /**
+ * @author Bohdan Leonchyk
  * For more information https://github.com/swagger-api/swagger-core/wiki/Annotations-1.5.X
  */
 
